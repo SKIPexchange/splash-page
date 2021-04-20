@@ -1,0 +1,14 @@
+<div class="breadcumber-container" [ngClass]="{'error': isError, 'gray': isGray}">
+  <ng-container *ngFor="let p of path">
+    <div class="path" [ngClass]="{'disable': p.disable || isGray}">
+      {{p.name}}
+    </div>
+    <div class="arrow">
+      >
+    </div>
+  </ng-container>
+  <div class="path path--active">
+    {{message}}
+  </div>
+  <div class="cursor" #cursor></div>
+</div>

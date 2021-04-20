@@ -1,0 +1,15 @@
+.no-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  background: var(--primary-default);
+  font-size: 10px;
+}
+
+.gray {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}

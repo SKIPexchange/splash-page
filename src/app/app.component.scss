@@ -1,0 +1,46 @@
+.background-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  min-width: 1400px;
+	background-color: #000B12;
+}
+
+main {
+  position: relative;
+}
+
+footer {
+  z-index: 1;
+  width: 100%;
+  padding: 15px 15px;
+  flex: 1 1 auto;
+  display: flex;
+  align-items: flex-end;
+
+  .footer-content {
+    width: 100%;
+    display: flex;
+    color: #4B5261;
+    justify-content: center;
+    align-items: center;
+    margin-top: 44px;
+    font-size: 14px;
+    font-family: 'Roboto';
+
+    @media (min-width: 768px) {
+      flex-flow: row;
+    }
+
+    .footer-link {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+  }
+
+}

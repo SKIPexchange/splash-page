@@ -1,0 +1,16 @@
+<div class="top-bar">
+  <a href="https://thorchain.org" target="_blank">VISIT THE BRAND NEW THORCHAIN.ORG WEBSITE</a>
+</div>
+<header>
+  <h1>
+    <a class="flex items-center">
+      <img *ngIf="!isTestnet" src="/assets/images/vanaheimex-logo-chaosnet.svg" alt="">
+      <img *ngIf="isTestnet" src="/assets/images/vanaheimex-logo-testnet.svg" alt="">
+    </a>
+  </h1>
+  <div class="header-right">
+    <div class="flex thorchain-indicator">
+      <app-last-block-indicator></app-last-block-indicator>
+    </div>
+  </div>
+</header>
