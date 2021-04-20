@@ -55,9 +55,9 @@ export class SplashComponent implements OnInit {
 
   gotoApp() {
     if (this.isTestnet)
-      window.location.href = 'https://asgard-exchange.vercel.app/';
+      window.location.href = 'https://testnet.vanaheimex.com/';
     else
-      window.location.href = 'https://vanahimex.vercel.app/';
+      window.location.href = 'https://app.vanaheimex.com/';
   }
 
   ngOnInit(): void {

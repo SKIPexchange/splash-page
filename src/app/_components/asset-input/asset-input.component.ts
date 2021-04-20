@@ -93,9 +93,9 @@ export class AssetInputComponent implements OnInit, OnDestroy {
     console.log(this.isTestnet)
     if (!this.isGray) {
       if (this.isTestnet)
-        window.location.href = 'https://asgard-exchange.vercel.app/';
+        window.location.href = 'https://testnet.vanaheimex.com/';
       else
-        window.location.href = 'https://vanahimex.vercel.app/';
+        window.location.href = 'https://app.vanaheimex.com/';
     }
   }
 
