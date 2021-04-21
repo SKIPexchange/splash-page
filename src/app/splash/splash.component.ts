@@ -55,7 +55,7 @@ export class SplashComponent implements OnInit {
 
   gotoApp() {
     if (this.isTestnet)
-      window.location.href = 'https://testnet.vanaheimex.com/';
+      window.location.href = 'https://testnet.app.vanaheimex.com/';
     else
       window.location.href = 'https://app.vanaheimex.com/';
   }
