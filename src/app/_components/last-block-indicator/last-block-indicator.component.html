@@ -8,7 +8,7 @@
       alt="telegram-link-hover"
       [src]="isTestnet ? '/assets/icons/social-telegram-icon-hover-testnet.svg' : '/assets/icons/social-telegram-icon-hover.svg'"
   /></a>
-  <a class="social-item github-icon" href="https://github.com/asgardex/asgard-exchange" target="_blank"
+  <a class="social-item github-icon" href="https://github.com/vanaheimex/asgard-exchange" target="_blank"
     ><img
       class="icon-pic"
       alt="github-link"
@@ -28,15 +28,13 @@
   /></a>
 </div>
 <div class="nav-rune-container">
-  <a class="no-style" href="https://viewblock.io/thorchain" target="_blank">
-    <div class="nav-rune" [ngClass]="{'nav-rune-new-block': updating}">
-      <div class="nav-rune-logo">
-        <img src="/assets/images/rune-symbol.svg" alt="">
-      </div>
-      <div class="nav-rune-number">
-        <span [ngClass]="{'nav-rune-number-new-block': updating}" *ngIf="lastBlock">{{ lastBlock | number:'1.0':'en-US' }}</span>
-        <span *ngIf="!lastBlock">CONNECTING</span>
-      </div>
+  <a class="no-style nav-rune" href="https://viewblock.io/thorchain" target="_blank" [ngClass]="{'nav-rune-new-block': updating}">
+    <div class="nav-rune-logo">
+      <img src="/assets/images/rune-symbol.svg" alt="">
+    </div>
+    <div class="nav-rune-number">
+      <span [ngClass]="{'nav-rune-number-new-block': updating}" *ngIf="lastBlock">{{ lastBlock | number:'1.0':'en-US' }}</span>
+      <span *ngIf="!lastBlock">CONNECTING</span>
     </div>
   </a>
 </div>

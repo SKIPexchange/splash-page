@@ -22,6 +22,7 @@ import { RightOptionModule } from '../_components/right-option/right-option.modu
         component: SplashComponent
       }
     ])
-  ]
+  ],
+  exports: [SplashComponent]
 })
 export class SplashModule { }

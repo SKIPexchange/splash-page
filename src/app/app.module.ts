@@ -32,6 +32,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 
 /** EXTERNAL */
 import { LastBlockIndicatorComponent } from './_components/last-block-indicator/last-block-indicator.component';
+import { SplashModule } from './splash/splash.module';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { LastBlockIndicatorComponent } from './_components/last-block-indicator/
     DirectivesModule,
     ArrowModule,
     BreadcrumbModule,
+    SplashModule
   ],
   providers: [
     LastBlockService,

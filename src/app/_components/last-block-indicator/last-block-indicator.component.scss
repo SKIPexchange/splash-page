@@ -131,23 +131,23 @@ span {
 }
 .nav-rune {
   display: flex;
-  padding: 2px 1.5px 1.5px 1.5px;
   width: 96px;
   border-radius: 2.5px;
   margin-top: 5px;
   background-color: white;
-  transition: 0.5s ease;
 
   &:hover {
     background-color: var(--primary-default);
-    transition: 0.1s ease;
     .nav-rune-number {
-      color: var(--primary-default);
+      border-color: var(--primary-default);
+      span {
+        color: var(--primary-default);
+      }
     }
   }
 
   .nav-rune-logo {
-    padding: 0 5px;
+    padding: 2px 5px;
     display: flex;
   }
 
@@ -160,18 +160,19 @@ span {
     color: #fff;
     flex-grow: 3;
     background-color: #000;
-    transition: color 0.5s ease;
+    border: 1.5px solid #fff;
+    border-radius: 0 2.5px 2.5px 0;
 
     span {
       line-height: 12px;
     }
   }
-  .nav-rune-number-new-block {
-    color: var(--primary-default);
-    transition: color 0s ease;
-  }
 }
 .nav-rune-new-block {
+  color: var(--primary-default);
   background-color: var(--primary-default);
-  transition: 0s ease;
+
+  .nav-rune-number {
+    border-color: var(--primary-default);
+  }
 }
