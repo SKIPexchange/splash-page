@@ -15,6 +15,7 @@ import {
 } from '@thorchain/asgardex-util';
 import { PoolDTO } from '../_classes/pool';
 import { assetAmount, assetToBase, BaseAmount, baseAmount, bn } from '@xchainjs/xchain-util';
+import { links } from 'src/app/_const/links';
 
 type inputs = {
   balance: number;
@@ -39,6 +40,7 @@ export class SplashComponent implements OnInit {
   selectableMarkets: AssetAndBalance[];
   _sourceAssetTokenValue: BaseAmount;
   slip: number;
+  links: any;
 
 
   poolDetailMap: {
@@ -51,6 +53,7 @@ export class SplashComponent implements OnInit {
   ) {
     this.gray = [true,true,true,true,true,true,true];
     this.isTestnet = environment.network === 'testnet' ? true : false;
+    this.links = links;
   }
 
   gotoApp() {
