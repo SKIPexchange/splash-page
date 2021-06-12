@@ -1,5 +1,6 @@
 <div class="top-bar">
-  <a href="https://thorchain.org" target="_blank">VISIT THE BRAND NEW THORCHAIN.ORG WEBSITE</a>
+  <a *ngIf="isTestnet" href="https://thorchain.org" target="_blank">TESTNET • YOUR ASSETS WILL BE LOST IF YOU DON’T SEND TESTNET ASSETS TO YOUR THESE WALLETS • TESTNET</a>
+  <a *ngIf="!isTestnet" href="https://thorchain.org" target="_blank">VISIT THE BRAND NEW THORCHAIN.ORG WEBSITE</a>
 </div>
 <header>
   <h1>
