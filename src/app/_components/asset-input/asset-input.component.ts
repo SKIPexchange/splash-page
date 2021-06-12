@@ -93,9 +93,9 @@ export class AssetInputComponent implements OnInit, OnDestroy {
     console.log(this.isTestnet)
     if (!this.isGray) {
       if (this.isTestnet)
-        window.location.href = 'https://testnet.app.vanaheimex.com/';
+        window.location.href = 'https://testnet.app.skip.exchange/';
       else
-        window.location.href = 'https://app.vanaheimex.com/';
+        window.location.href = 'https://app.skip.exchange/';
     }
   }
 
